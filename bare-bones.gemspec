@@ -1,5 +1,5 @@
 Gem::Specification.new do |specification|
-  specification.authors = ['You']
+  specification.authors = ['Shkumbin Delija']
   specification.files = Dir['lib/**/*.rb']
   specification.name = 'bare-bones'
   specification.summary = 'This creates a bare bones ruby gem'
