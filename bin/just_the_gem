@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+def gem_name
+  unless (gem_name = $*[1])
+    puts 'Please specify the name of the gem like so: just_the_gem test_gem'
+    exit
+  end
+
+  gem_name
+end
+
+def main
+  include JustTheGem
+
+  create(gem_name: gem_name)
+end
+
+main()
