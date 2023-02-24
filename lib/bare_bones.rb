@@ -1,2 +1,7 @@
-require 'minitest/autorun'
-require_relative '../lib/bare_bones'
+module BareBones
+  module_function
+
+  def bare_bones
+    'bare_bones'
+  end
+end
