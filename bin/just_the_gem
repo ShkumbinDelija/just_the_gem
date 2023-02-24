@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def gem_name
-  unless (gem_name = $*[1])
+  unless (gem_name = $*[0])
     puts 'Please specify the name of the gem like so: just_the_gem test_gem'
     exit
   end
@@ -10,6 +10,8 @@ def gem_name
 end
 
 def main
+  require_relative '../lib/just_the_gem'
+
   include JustTheGem
 
   create(gem_name: gem_name)

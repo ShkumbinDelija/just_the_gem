@@ -1,4 +1,6 @@
 module JustTheGem
+  module_function
+
   def create(gem_name:)
     abort 'Please specify the gem name' if gem_name.empty?
 
@@ -14,8 +16,9 @@ module JustTheGem
   end
 
   def create_files(gem_name:)
-    File.create("lib/#{gem_name}.rb")
-    File.create("test/test_#{gem_name}.rb")
+    Dir.chdir(gem_name)
+    File.new("lib/#{gem_name}.rb", 'w')
+    File.new("test/test_#{gem_name}.rb", 'w')
   end
 
   def write_gem_spec(gem_name:)
