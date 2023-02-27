@@ -3,8 +3,9 @@ Gem::Specification.new do |specification|
   specification.files = Dir['lib/**/*.rb']
   specification.name = 'just_the_gem'
   specification.summary = 'This creates a bare bones ruby gem'
-  specification.version = '0.0.9'
+  specification.version = '0.10.0'
   specification.executables << 'just_the_gem'
   specification.homepage = 'https://github.com/ShkumbinDelija/just_the_gem'
   specification.metadata = { 'source_code_uri' => 'https://github.com/ShkumbinDelija/just_the_gem' }
+  specification.license = 'MIT'
 end
