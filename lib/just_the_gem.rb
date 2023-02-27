@@ -45,7 +45,7 @@ end
   end
 
   def rakefile_contents
-    <<~RUBY
+    <<~'END'
 task default: %w[build push]
 
 task :build do
@@ -68,7 +68,7 @@ end
 def gem_build
   Dir['*.gem'].sort.last
 end
-    RUBY
+    END
   end
 end
 
