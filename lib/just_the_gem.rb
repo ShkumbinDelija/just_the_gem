@@ -7,6 +7,7 @@ module JustTheGem
     create_dirs(gem_name:)
     create_files(gem_name:)
     write_gem_spec(gem_name:)
+    write_rakefile
   end
 
   def create_dirs(gem_name:)
@@ -35,6 +36,37 @@ Gem::Specification.new do |specification|
   specification.version = '0.0.1'
   # specification.homepage = 'https://github.com/ShkumbinDelija/just_the_gem'
   # specification.metadata = { 'source_code_uri' => 'https://github.com/ShkumbinDelija/just_the_gem' }
+end
+    RUBY
+  end
+
+  def write_rakefile
+    IO.write('Rakefile.rb', rakefile_contents)
+  end
+
+  def rakefile_contents
+    <<~RUBY
+task default: %w[build push]
+
+task :build do
+  sh "gem build #{gemspec}"
+end
+
+task :push do
+  sh "gem push #{gem_build}"
+  puts "Visit your new gem at: https://rubygems.org/gems/#{gem_name}" if $?.success?
+end
+
+def gemspec
+  @gemspec ||= Dir['*.gemspec'].first
+end
+
+def gem_name
+  gemspec.split('.gemspec').first
+end
+
+def gem_build
+  Dir['*.gem'].sort.last
 end
     RUBY
   end
