@@ -1,5 +1,5 @@
 # JustTheGem
-![Alt Text](https://rubygems-badges.onrender.com/gems/just_the_gem)
+<img src="https://rubygems-badges.onrender.com/gems/just_the_gem" alt="Alt Text" width="100" height="100">
 
 
 Use this gem to create a skeleton for a simple ruby gem
