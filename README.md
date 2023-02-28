@@ -1,6 +1,6 @@
 # JustTheGem
+![Alt Text](https://rubygems-badges.onrender.com/owners/shkumbindelija)
 
-![](https://rubygems-badges.onrender.com/owners/shkumbindelija)
 
 Use this gem to create a skeleton for a simple ruby gem
 
