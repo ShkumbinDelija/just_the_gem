@@ -1,5 +1,5 @@
 Gem downloads
-[![Gem Version](https://rubygems-badges.onrender.com/owners/shkumbindelija.png)](https://rubygems-badges.onrender.com/owners/shkumbindelija)
+[![Gem Version](https://rubygems-badges.onrender.com/owners/shkumbindelija)](https://rubygems-badges.onrender.com/owners/shkumbindelija)
 
 # JustTheGem
 
