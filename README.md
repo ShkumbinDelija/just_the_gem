@@ -1,5 +1,5 @@
 Gem downloads
-
+[![Gem Downloads](https://rubygems-badges.onrender.com/gems/just_the_gem)](https://rubygems-badges.onrender.com/gems/just_the_gem)
 
 # JustTheGem
 
