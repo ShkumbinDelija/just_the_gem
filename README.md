@@ -1,3 +1,6 @@
+Gem downloads
+[![Gem Version](https://rubygems-badges.onrender.com/owners/shkumbindelija)](https://rubygems-badges.onrender.com/owners/shkumbindelija)
+
 # JustTheGem
 
 Use this gem to create a skeleton for a simple ruby gem
