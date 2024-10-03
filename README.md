@@ -1,6 +1,6 @@
 # JustTheGem
 
-![Gem Downloads](https://rubygem-badges.onrender.com/gems/just_the_gem.png)
+![Gem Downloads](https://rubyontracks.com/badges/gems/just_the_gem)
 ![Gem Version](https://badge.fury.io/rb/just_the_gem.svg)
 
 Use this gem to create a skeleton for a simple ruby gem
